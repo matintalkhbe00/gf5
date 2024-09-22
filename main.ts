@@ -8,6 +8,7 @@ async function action(headers: Record<string, string>): Promise<boolean> {
       headers,
     }
   );
+  
 
   const json = await res.json();
   return res.status === 201;
