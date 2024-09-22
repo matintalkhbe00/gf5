@@ -49,7 +49,6 @@ async function handleToken(authToken: string): Promise<void> {
     } else {
       // console.log(`Waiting: Time left for next action with token ${authToken}: ${nextTime - now}s`);
     }
-
     await delay(1000);
   }
 }
